@@ -22,11 +22,11 @@ const App = () => {
       if (response.ok) {
         setWeatherData(data);
         setError('');
-        setBackground(data.weather[0].main);  // Dynamically set background
+        setBackground(data.weather[0].main);  
       } else {
         setError(data.message || 'City not found.');
         setWeatherData(null);
-        setBackground('default');  // Default background for errors
+        setBackground('default');  
       }
     } catch (err) {
       setError('Failed to fetch data. Please try again later.');
@@ -38,7 +38,6 @@ const App = () => {
   const setBackground = (weather) => {
     let imageUrl = '';
 
-    // Set background image based on weather
     switch (weather) {
       case 'Clear':
         imageUrl = "url('https://source.unsplash.com/random/1600x900/?clear-sky')";
