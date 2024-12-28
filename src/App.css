@@ -1,0 +1,69 @@
+/* Ensure the background spans the entire viewport */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Make sure the height covers the viewport */
+  width: 100%; /* Ensure the width covers the viewport */
+  font-family: 'Poppins', sans-serif;
+  background-color: #e0f7fa; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Content Styling */
+.container {
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 2rem;
+  color: #00796b; /* Dark teal for title */
+  margin-bottom: 20px;
+}
+
+/* Input and Button Styling */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #00796b; /* Dark teal border */
+  border-radius: 8px;
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #00796b; /* Dark teal */
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004d40; /* Darker teal */
+}
+
+/* Weather Info Styling */
+.weather-info {
+  background: #b2dfdb; /* Light teal */
+  color: #004d40; /* Dark teal */
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
